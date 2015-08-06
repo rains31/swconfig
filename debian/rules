@@ -1,4 +1,0 @@
-#!/usr/bin/make -f
-export DEB_CFLAGS_MAINT_APPEND  = -I /usr/include/libnl3/
-%:
-	dh $@

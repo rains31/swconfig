@@ -1,5 +1,5 @@
 ifndef CFLAGS
-CFLAGS = -O2 -g -I /usr/include/libnl3/
+CFLAGS = -O2 -g -I /usr/include/libnl3/ -I /lib/modules/`uname -r`/build -I .
 endif
 LIBS=-lnl-3 -lnl-genl-3
 all: swconfig
