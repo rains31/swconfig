@@ -1,4 +1,4 @@
-CFLAGS=$(CFLAGS) -I /usr/include/libnl3/ -I /lib/modules/`uname -r`/build -I .
+CFLAGS:=$(CFLAGS) -I /usr/include/libnl3/ -I /lib/modules/`uname -r`/build -I .
 LIBS=-lnl-3 -lnl-genl-3
 PREFIX=/usr
 all: swconfig
