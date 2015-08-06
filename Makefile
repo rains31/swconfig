@@ -1,7 +1,6 @@
-ifndef CFLAGS
-CFLAGS = -O2 -g -I /usr/include/libnl3/ -I /lib/modules/`uname -r`/build -I .
-endif
+CFLAGS?=-O2 -I /usr/include/libnl3/ -I /lib/modules/`uname -r`/build -I .
 LIBS=-lnl-3 -lnl-genl-3
+PREFIX=/usr
 all: swconfig
 
 %.o: %.c
@@ -14,4 +13,4 @@ clean:
 	rm -f *~ *.o swconfig
 
 install:
-	install -D swconfig $(DESTDIR)$(PREFIX)/sbin/swconfig
+	install -D swconfig $(DESTDIR)$(PREFIX)/bin/swconfig
