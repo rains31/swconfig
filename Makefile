@@ -12,5 +12,5 @@ swconfig: cli.o swlib.o
 clean:
 	rm -f *~ *.o swconfig
 
-install:
+install: all
 	install -D swconfig $(DESTDIR)$(PREFIX)/bin/swconfig
