@@ -8,9 +8,13 @@ project so their copyrights apply.
 build on archlinuxarm:
 ---------------------
 
+```
 wget https://raw.githubusercontent.com/rains31/swconfig/master/PKGBUILD && makepkg
+```
 OR:
+```
 yaourt -S swconfig
+```
 
 USE:
 ----
