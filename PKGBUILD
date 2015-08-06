@@ -1,5 +1,5 @@
 pkgname=swconfig
-pkgver=20150806.2.0.ge0cb856
+pkgver=20150806
 pkgrel=1
 pkgdesc="project to package the swconfig utility from OpenWRT for archlinuxarm on BPi-R1"
 url="https://github.com/rains31/swconfig"
@@ -15,7 +15,7 @@ sha1sums=('SKIP')
 
 pkgver() {
   cd "$srcdir/${pkgname}"
-  git describe --tags --long | sed 's/^v//;s/-/./g'
+  git describe --tags | sed 's/^v//;s/-/./g'
 }
 
 
